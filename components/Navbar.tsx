@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="flex-between gap-5">
         {/* Clerk Management Auth */}
         <SignedIn>
-          <UserButton />
+          <UserButton afterSignOutUrl="/sign-in" />
         </SignedIn>
         
         <MobileNav />
