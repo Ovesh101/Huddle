@@ -3,13 +3,11 @@ import Image from "next/image";
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
+ 
 } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
+
 
 interface MeetingProps {
   isOpen: boolean;
@@ -44,7 +42,7 @@ const MeetingModel = ({
                     <Image src={image} width={72} height={72} alt="image"  />
                 </div>
             )}
-            <h1 className={cn('text-3xl font-bold leading-[42px] *:' , className) }>{title}</h1>
+            <h1 className={cn('text-3xl font-bold leading-[42px]' , className) }>{title}</h1>
             {children}
             <Button className="bg-blue-1 focus-visible:ring-0 focus-visible:ring-offset-0" onClick={handleClick}>
                 {buttonIcon && (
